@@ -15,19 +15,20 @@ namespace Way_Too_Long_Words
                 var word = reader.Next();
                 if (word.Length > 10)
                 {
-                    result.Append(AbbWord(word));
+                    result.Append(AbbreviatedWord(word));
                 }
                 else
                 {
                     result.Append(word);
                 }
-
+                
                 result.Append("\n");
                 numOfWord--;
             }
             Console.Write(result.ToString());
         }
-        static StringBuilder AbbWord(string word)
+       
+        static StringBuilder AbbreviatedWord(string word)
         {
             StringBuilder result = new StringBuilder();
             //  result.Append("");
@@ -39,6 +40,7 @@ namespace Way_Too_Long_Words
         }
 
     }
+
     class Reader
     {
         private int index = 0;
