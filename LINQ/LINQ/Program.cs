@@ -32,12 +32,9 @@ namespace LINQ
             var groupedPeopleByAge = GroupedPeopleByAge(people);
             foreach (var group in groupedPeopleByAge)
             {
-                Console.WriteLine($"Group Age: {group[0].Age}");
+                Console.WriteLine($"Group Age: {group[0].Age} - Quantity: {group.Count}");
 
-                foreach (var person in group)
-                {
-                    Console.Write($"{person.Name} {person.Age}\n");
-                }
+               
             }
         }
 
