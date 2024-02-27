@@ -11,7 +11,7 @@
             var countDanik = 0;
             for (int i = 0; i < numOfGames; i++)
             {
-                if (outCome[i] == 'A')
+                if (string.Equals(outCome[i],'A'))
                 {
                     countAnton++;
                 }
